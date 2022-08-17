@@ -1,0 +1,122 @@
+.menu-toggle{
+  @media screen and (min-width: 768px){
+    display: none;
+  }
+  @media screen and (min-width: 1200px){
+    display: none;
+  }
+  
+
+  margin-left: auto;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+
+
+  &__icon{
+    fill: rgb(0, 0, 0);
+
+  }
+  svg{
+    height: 40px;
+    width: 40px;
+    
+  }
+}
+
+
+.button {
+
+  width: 200px;
+  border-radius: 5px;
+  padding: 10px 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  border-style: inherit;
+  background-color: var(--blue);
+  color: var(--background-main);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+.button--position {
+  position: relative;
+  z-index: 1;
+  margin-top: 40px;
+
+  @media screen and (min-width: 480px){
+    margin-top: 30px;
+
+
+  }
+}
+.close-modal {
+
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  padding: 6px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+
+  border: 1px solid var(--logo-color);
+
+  cursor: pointer;
+  transition-property: fill;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cub);
+
+}
+
+.modal-btn {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  z-index: 5;
+}
+.button--position-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.button__icon {
+  margin-top: 4px;
+  width: 24px;
+  height: 24px;
+}
+.portfolio-menu__button {
+  padding: 6px 22px;
+  margin-top: 0;
+  border-radius: 4px;
+
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  background: var(--team-color);
+  box-shadow: 0 0 0;
+
+  cursor: pointer;
+
+  transition-property: background, color, box-shadow;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cub);
+
+}
+
+.portfolio-menu__button:hover,
+.portfolio-menu__button:focus {
+  color: var(--background-main);
+  background: var(--blue);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}

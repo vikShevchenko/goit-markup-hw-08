@@ -1,0 +1,105 @@
+.hero {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    margin: 0 auto;
+ 
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../images/background-img.jpg);
+      
+      
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-hero);
+ 
+    text-align: center;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+   
+      pointer-events: none;
+    }
+
+    @media screen  and (min-width: 480px){
+      padding-top: 0px;
+      padding-bottom: 0px;
+      max-width: 480px;
+      background-size: contain;
+
+      background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/header-smoll@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-hero);
+  @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+        background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/header-smoll@2x.jpg);
+      }
+    }
+    
+    @media screen and (min-width: 768px){
+      padding-top: 0px;
+      padding-bottom: 0px;
+      max-width: 768px;
+      background-size: contain;
+
+      background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/Header_img@1x_md.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-hero);
+  @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+        background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/Header_img@2x_md.jpg);
+      }
+    }
+
+    @media screen and (min-width: 1200px){
+      padding-top: 0px;
+      padding-bottom: 0px;
+      max-width: 1200px;
+      background-size: contain;
+
+      background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/baground_big@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-hero);
+  @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+        background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/baground_big@2x.jpg);
+      }
+
+  
+    }
+   
+  }
+
+  

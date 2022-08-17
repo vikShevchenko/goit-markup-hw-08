@@ -1,0 +1,151 @@
+.hide{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+    
+}
+
+@media screen and (min-width:768px){
+    .hide{
+        display: none;
+    }    
+}
+
+.menu-container{
+    pointer-events: visible;
+    width: 480px;
+    height: 100%;
+    background-color: white;
+    padding: 48px 40px;
+    transform: translateX(100%);
+    transition: transform 250ms linear;
+
+    outline: 1px solid;
+    z-index: 30;
+
+    .phon-button{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 425px;
+        top: 18px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .phon-icon{
+        width: 18px;
+        height: 18px;
+        position: relative;
+        left: 375px;
+        top: -30px;
+        fill: var(--text-color);
+        transition: fill var(--time) var(--cub);
+        
+
+        &:hover{
+            fill: var(--blue);
+        }
+        &:focus{
+            fill: var(--blue);
+        }
+
+    }
+
+    .phon-nav{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .phon-nav__link{
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+        
+    }
+    
+
+    .phon-nav__link{  
+        display: inline-block;
+        width: 50%;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+        transition: color var(--text-color) linear;
+
+        &:hover{
+            color: var(--blue);
+            // var(--blue)
+        }
+        &:focus{
+            color: var(--blue);
+        }
+        
+    }
+    .phon-link{
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        color: var(--blue);
+        margin-top: 302px;
+
+    }
+    .phon-mail{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #757575;
+        margin-top: 32px;
+    }
+
+    .phon-social{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: auto;
+        
+    }
+
+    .phon-social__elements{
+        
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: var(--blue);
+    }
+    
+
+
+    .phon-menu{
+        display: flex;
+        min-height: 796px;
+        flex-direction: column;
+        min-height: 700px;
+        
+
+        
+    }
+    .phon-social__elements:not(:last-child){
+        
+        display: block;
+        border-right: 1px solid rgba(33, 33, 33, 0.806);   
+    }
+    .phon-social__elements>a{
+        margin-right: 10px;
+    }
+    
+}
+.menu-container.is-open{
+    transform: translateX(0%);
+}

@@ -1,0 +1,27 @@
+
+  .backdrop {
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+ 
+    background-color: rgba(0, 0, 0, 0.2);
+ 
+    z-index: 3;
+ 
+    visibility: visible;
+    transition-property: opacity;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cub);
+ 
+  } 
+ 
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+ 
+  }        
+ 

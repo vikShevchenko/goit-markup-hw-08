@@ -1,0 +1,331 @@
+.modal {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+ 
+    padding: 40px;
+    width: 528px;
+    height: 581px;
+    border-radius: 4px;
+ 
+    align-items: center;
+    text-align: center;
+ 
+    background-color: var(--background-main);
+    opacity: 1;
+    visibility: visible;
+
+    @media screen  and (min-width: 480px){
+      width: 450px;
+      height: 609px;
+      margin-top: -85px;
+
+    }
+    @media screen and (min-width: 768px){
+      margin-top: -10px;
+
+    }
+    @media screen and (min-width: 1200px){
+      width: 528px;
+      height: 581px;
+
+    }
+
+ 
+  }
+ 
+
+  .modal-form-box {
+    position: absolute;
+    top: 40px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+ 
+  }
+ 
+  .modal-title {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+ 
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+
+  }
+ 
+  .modal-form {
+    display: block;
+    padding-top: 14px;
+ 
+  }
+ 
+  .modal-lable {
+    margin-bottom: 4px;
+  }
+ 
+  .modal-section {
+    position: relative;
+  }
+ 
+  .modal-lable {
+    display: block;
+    display: flex;
+    justify-content: start;
+ 
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+ 
+    color: var(--modal-text-color);
+ 
+ 
+  }
+ 
+  .modal-input:not(:last-child) {
+    margin-bottom: 10px;
+ 
+  }
+ 
+  .modal-input {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    height: 40px;
+    width: 100%;
+    padding-left: 40px;
+    border-radius: 4px;
+ 
+    border: 1px solid rgba(33, 33, 33, 0.2);
+ 
+ 
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--modal-text-color);
+ 
+    transition-property: border-color;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cub);
+ 
+  }
+ 
+ 
+ 
+  .close-modal:hover,
+  .modal-section:hover,
+  .modal-section:focus {
+    fill: var(--blue);
+ 
+  }
+ 
+  input:focus {
+    border: 1px solid var(--blue);
+    outline: none;
+ 
+  }
+ 
+  textarea:focus {
+    border: 1px solid var(--blue);
+    outline: none;
+  }
+ 
+  .textarea:hover,
+  .modal-section>input:hover {
+    border-color: var(--blue);
+ 
+  }
+ 
+  .modal-section>input:focus+.iconName,
+  .modal-section>input:focus+.iconPhone,
+  .modal-section>input:focus+.iconEmail {
+    fill: var(--blue);
+ 
+  }
+ 
+  .checkt-ampty {
+    fill: var(--text-color);
+    transition-property: fill;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cub);
+ 
+  }
+ 
+  .modal-check:focus+.ico .checkt-ampty,
+  .modal-check:hover+.ico .checkt-ampty {
+    fill: var(--blue);
+ 
+  }
+ 
+ 
+  .textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+ 
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    border: 1px solid rgba(117, 117, 117, 0.5);
+    border-radius: 4px;
+ 
+    transition-property: border;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cub);
+ 
+  }
+ 
+  .modal-deal-box {
+    display: flex;
+    
+    text-align: left;
+    align-items: center;
+    margin-bottom: 30px;
+ 
+  }
+ 
+  .modal-check {
+    display: block;
+    margin-left: 5px;
+    width: 16px;
+    height: 15px;
+    color: #000;
+    opacity: 0;
+    z-index: 1;
+ 
+  }
+ 
+  .checkt {
+    opacity: 0;
+  }
+ 
+  .checkt-ampty {
+    opacity: 1;
+  }
+ 
+  .modal-check:checked+.ico .checkt {
+    opacity: 1;
+  }
+ 
+  .modal-check:checked+.ico .checkt-ampty {
+    opacity: 0;
+  }
+ 
+  .modal-deal {
+    display: flex;
+ 
+    margin-left: 5px;
+    
+    user-select: none;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--modal-text-color);
+
+    @media screen and (min-width: 1200px){
+      margin-left: 25px;
+
+    } 
+  }
+ 
+  .modal-linck {
+    text-decoration: underline;
+    color: var(--blue);
+  }
+ 
+  .ico {
+    position: absolute;
+    left: 40px;
+    height: 18px;
+    width: 18px;
+    @media screen and (min-width: 1200px){
+      left: 60px;
+
+    } 
+ 
+  }
+ 
+  .fill {
+    fill: #212121;
+ 
+  }
+ 
+  .iconName {
+    position: absolute;
+ 
+    width: 12px;
+    height: 12px;
+    top: 14px;
+    left: 15px;
+ 
+    transition-property: fill;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cub);
+ 
+  }
+ 
+  .iconPhone {
+    position: absolute;
+ 
+    width: 15px;
+    height: 15px;
+    top: 13px;
+    left: 15px;
+ 
+    transition-property: fill;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cub);
+  }
+ 
+  .iconEmail {
+    position: absolute;
+ 
+    width: 15px;
+    height: 12px;
+    top: 14px;
+    left: 14px;
+ 
+    transition-property: fill;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cub);
+ 
+  }
+
+  .backdrop {
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+ 
+    background-color: rgba(0, 0, 0, 0.2);
+ 
+    z-index: 3;
+ 
+    visibility: visible;
+    transition-property: opacity;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cub);
+ 
+  }
+  
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+ 
+  }         
+ 

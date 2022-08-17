@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./style.css/modern-normalize.css" /> 
+  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./style.css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="body">
+    <!--Шапка сайта-->
+    <header class="head">
+      <div class="container top-head">
+        <a class="logo logo--position" href="./index.html"><span class="logo__first">Web</span><span
+            class="logo__second">Studio</span></a>
+  
+        <nav>
+          <ul class="menu">
+            <li ><a class="menu__link curent" href="./index.html">Студія</a></li>
+            <li>
+              <a  class="menu__activ-link menu__activ" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li><a class="menu__link curent" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <!--  -->
+        <ul class="hover-tel">
+          <li>
+            <a class="menu__link" href="mailto:info@devstudio.com"><svg class="hover-tel__envelope">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>info@devstudio.com</a>
+          </li>
+         <!--  -->
+          <li> 
+            <a class="menu__link" href="tel:+380961111111"><svg class="hover-tel__smartphone">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+  <!--Портфолио-->
+  <main class="portfolio-main">
+    <section>
+      <div class="container container__portfolio">
+        <ul class="portfolio-menu">
+          <li><button class="portfolio-menu__button" type="button">Все</button></li>
+          <li>
+            <button class="portfolio-menu__button" type="button">Веб-сайт</button>
+          </li>
+          <li>
+            <button class="portfolio-menu__button" type="button">Приложение</button>
+          </li>
+          <li>
+            <button class="portfolio-menu__button" type="button">Дизайн</button>
+          </li>
+          <li>
+            <button class="portfolio-menu__button" type="button">Маркетинг</button>
+          </li>
+        </ul>
+
+        <ul class="portfolio">
+          <li class="portfolio__background">
+            <a class="portfolio--focus" href="#">
+              <div class="drop"><img class="portfolio__foto" 
+                srcset="
+                ./images/img9354.jpg 354w, 
+                ./images/img9370.jpg 370w, 
+                ./images/img9450.jpg 450w,
+                ./images/img9708.jpg 708w,
+                ./images/img9740.jpg 740w,
+                ./images/img9900.jpg 900w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                 src="./images/img1.jpg" alt="лептоп" />
+                <div class="portfolio__drop-window">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+              </div>
+              <div class="portfolio__title">
+                <h3 class="portfolio__project">Технокряк</h3>
+                <p class="portfolio__description">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__background">
+            <a class="portfolio--focus" href="#">
+              <div class="drop"><img class="portfolio__foto"
+                srcset="
+                ./images/img8354.jpg 354w, 
+                ./images/img8370.jpg 370w, 
+                ./images/img8450.jpg 450w,
+                ./images/img8708.jpg 708w,
+                ./images/img8740.jpg 740w,
+                ./images/img8900.jpg 900w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                 src="./images/img2.jpg" alt="баскетболисты" />
+                <div class="portfolio__drop-window"></div>
+              </div>
+              <div class="portfolio__title">
+                <h3 class="portfolio__project">Постер New Orlean vs Golden Star</h3>
+                <p class="portfolio__description">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__background">
+            <a class="portfolio--focus" href="#">
+              <div class="drop"><img class="portfolio__foto"
+                srcset="
+                ./images/img7354.jpg 354w, 
+                ./images/img7370.jpg 370w, 
+                ./images/img7450.jpg 450w,
+                ./images/img7708.jpg 708w,
+                ./images/img7740.jpg 740w,
+                ./images/img7900.jpg 900w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                 src="./images/img3.jpg" alt="ресторанный лейбл" />
+                <div class="portfolio__drop-window"></div>
+              </div>
+              <div class="portfolio__title">
+                <h3 class="portfolio__project">Ресторан Seafood</h3>
+                <p class="portfolio__description">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__background">
+            <a class="portfolio--focus" href="#">
+              <div class="drop"><img class="portfolio__foto"
+                srcset="
+                ./images/img6354.jpg 354w, 
+                ./images/img6370.jpg 370w, 
+                ./images/img6450.jpg 450w,
+                ./images/img6708.jpg 708w,
+                ./images/img6740.jpg 740w,
+                ./images/img6900.jpg 900w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                 src="./images/img4.jpg" alt="наушники" />
+                <div class="portfolio__drop-window"></div>
+              </div>
+              <div class="portfolio__title">
+                <h3 class="portfolio__project">Проект Prime</h3>
+                <p class="portfolio__description">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__background">
+            <a class="portfolio--focus" href="#">
+              <div class="drop"><img class="portfolio__foto"
+                srcset="
+                ./images/img5354.jpg 354w, 
+                ./images/img5370.jpg 370w, 
+                ./images/img5450.jpg 450w,
+                ./images/img5708.jpg 708w,
+                ./images/img5740.jpg 740w,
+                ./images/img5900.jpg 900w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                 src="./images/img5.jpg" alt="две коробки" />
+                <div class="portfolio__drop-window"></div>
+              </div>
+              <div class="portfolio__title">
+                <h3 class="portfolio__project">Проект Boxes</h3>
+                <p class="portfolio__description">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__background">
+            <a class="portfolio--focus" href="#">
+              <div class="drop"><img class="portfolio__foto"
+                srcset="
+                ./images/img4354.jpg 354w, 
+                ./images/img4370.jpg 370w, 
+                ./images/img4450.jpg 450w,
+                ./images/img4708.jpg 708w,
+                ./images/img4740.jpg 740w,
+                ./images/img4900.jpg 900w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                 src="./images/img6.jpg" alt="монитор" />
+                <div class="portfolio__drop-window"></div>
+              </div>
+              <div class="portfolio__title">
+                <h3 class="portfolio__project">Inspiration has no Borders</h3>
+                <p class="portfolio__description">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__background">
+            <a class="portfolio--focus" href="#">
+              <div class="drop"><img class="portfolio__foto"
+                srcset="
+                ./images/img3354.jpg 354w, 
+                ./images/img3370.jpg 370w, 
+                ./images/img3450.jpg 450w,
+                ./images/img3708.jpg 708w,
+                ./images/img3740.jpg 740w,
+                ./images/img3900.jpg 900w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                 src="./images/img7.jpg" alt="буклет" />
+                <div class="portfolio__drop-window"></div>
+              </div>
+              <div class="portfolio__title">
+                <h3 class="portfolio__project">Издание Limited Edition</h3>
+                <p class="portfolio__description">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__background">
+            <a class="portfolio--focus" href="#">
+              <div class="drop"><img class="portfolio__foto"
+                srcset="
+                ./images/img2354.jpg 354w, 
+                ./images/img2370.jpg 370w, 
+                ./images/img2450.jpg 450w,
+                ./images/img2708.jpg 708w,
+                ./images/img2740.jpg 740w,
+                ./images/img2900.jpg 900w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                 src="./images/img8.jpg" alt="лейбл" />
+                <div class="portfolio__drop-window"></div>
+              </div>
+              <div class="portfolio__title">
+                <h3 class="portfolio__project">Проект LAB</h3>
+                <p class="portfolio__description">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__background">
+            <a class="portfolio--focus" href="#">
+              <div class="drop"><img class="portfolio__foto"
+                srcset="
+                ./images/img1354.jpg 354w, 
+                ./images/img1370.jpg 370w, 
+                ./images/img1450.jpg 450w,
+                ./images/img1708.jpg 708w,
+                ./images/img1740.jpg 740w,
+                ./images/img1900.jpg 900w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                 src="./images/img9.jpg" alt="ноутбук" />
+                <div class="portfolio__drop-window"></div>
+              </div>
+              <div class="portfolio__title">
+                <h3 class="portfolio__project">Growing Business</h3>
+                <p class="portfolio__description">Приложение</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+
+  
+  <footer class="footer">
+    <div class="container align">
+
+      <div>
+        <a class="logo" href="#"><span class="logo__first">Web</span><span
+            class="logo__second-footer">Studio</span></a>
+
+        <address class="adress">
+          <ul class="adress__footer">
+            <li class="adress--size">
+              <a class="adress--str" href="https://goo.gl/maps/uQqDVaKPQXahRZEBA">
+                м. Київ, пр-т Лесі Українки, 26
+              </a>
+            </li>
+            <li class="adress--size">
+              <a class="footer__mail" href="maiolto:info@example.com">info@example.com</a>
+            </li>
+            <li class="adress--size">
+              <a class="footer__mail" href="tel:+380991111111">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+       <!-- ---------------- -->
+      <div class="lincs-futer">
+        <p class="footer-text">Приєднуйтесь</p>
+        <ul class="lincs-futer__social">
+          <li><a class="social-size social-size--color" href="#" target="_blank" rel="noopener noreferrer">
+              <svg class="size-icon wite">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg></a></li>
+          <li><a class="social-size social-size--color" href="#" target="_blank" rel="noopener noreferrer">
+              <svg class="size-icon wite">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg></a></li>
+          <li><a class="social-size social-size--color" href="#" target="_blank" rel="noopener noreferrer">
+              <svg class="size-icon wite">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg></a></li>
+          <li><a class="social-size social-size--color" href="#" target="_blank" rel="noopener noreferrer">
+              <svg class="size-icon wite">
+                <use href="./images/icons.svg#linkedin2"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+
+       <!-- ------------ -->
+
+      <div class="subsckribe subsckribe--position">
+        <p class="footer-text">Підпишіться на розсилку</p>
+        <div>
+          <form class="subsckribe__form" action="#">
+            <input class="subsckribe__input" type="email" placeholder="E-mail" name="telegram-adres">
+            <button type="submit" class="button button--position-footer"><span>Підписатися</span><svg class="button__icon">
+                <use href="./images/icons.svg#telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

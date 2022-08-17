@@ -1,0 +1,101 @@
+.menu {
+    
+    display: flex;
+    padding-left: 0;
+ 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+
+
+    @media screen and (max-width: 767px){
+      display: none;  //приховане меню
+    }
+
+    
+
+    & :not(:first-child) {
+      margin-left: 50px;
+      display: flex;
+
+    }
+        
+
+    
+    &__activ {
+      padding: 32px 0;
+      display: block;
+      color: var(--blue);
+    }
+    &__activ-link {
+      position: relative;
+    }
+    &__activ::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: var(--blue);
+      border-radius: 2px;
+    }
+   
+    &__link {
+      padding: 32px 0;
+      display: flex;
+      align-items: center;
+
+      @media screen  and (max-width: 480px){
+        display: none;  //приховане меню
+      }
+      @media screen and (min-width: 768px){
+        padding: 5px 0; 
+      }
+
+   
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+   
+      color: #757575;
+   
+      transition: color;
+      transition-duration: var(--time);
+      transition-timing-function: var(--cub);
+    }
+   
+    &__link:hover,
+    &__link:focus {
+      color: var(--blue);
+    }
+   
+    &__link:hover,
+    &__link:focus .envelope,
+    .smartphone {
+      fill: var(--blue);
+    }
+ 
+  }
+
+  @media screen  and (min-width: 480px){
+    .menu{
+      display: none; } //приховане меню
+  }
+
+  @media screen and (min-width: 768px){
+    .menu{
+      display: block;// меню зявляється
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .curent {
+    color: currentColor;
+  }
+

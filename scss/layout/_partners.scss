@@ -1,0 +1,90 @@
+.partners {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    &__box:hover {
+      border: var(--blue) 1px solid;
+    }
+   
+    &__box:hover &__size {
+      fill: var(--blue);
+   
+    }
+   
+    &__box:focus {
+      border: var(--blue) 1px solid;
+    }
+   
+    &__box:focus &__size {
+      fill: var(--blue);
+   
+    }
+  }
+
+  //Партнери два стовбця 480px
+
+  @media screen  and (min-width: 480px) {
+    .partners{
+      flex-wrap: wrap;
+  }
+
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    .partners{
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+  }
+
+    
+  }
+
+  .partners__size {
+    height: 60px;
+    width: 106px;
+    fill: var(--logo-color);
+   
+    transition-property: fill;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cub);
+   
+  }
+
+.partners__box {
+  height: 92px;
+  width: 170px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: var(--logo-color) 1px solid;
+  border-radius: 4px;
+ 
+  transition-property: border;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cub);
+ 
+}
+
+// Партнери налаштування відступів 480px
+
+@media screen  and (min-width: 480px) {
+  .partners__box {
+    height: 92px;
+    width: 210px;
+}
+}
+
+// Партнери налаштування відступів і розміру 1200px
+
+@media screen and (min-width: 1200px) {
+  .partners__box {
+    height: 92px;
+    width: 170px;
+}
+}
+
+
+ 

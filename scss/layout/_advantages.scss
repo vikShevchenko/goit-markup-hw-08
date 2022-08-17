@@ -1,0 +1,69 @@
+.advantages {
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    &__icon {
+      margin-bottom: 30px;
+      height: 120px;
+      width: 270px;
+   
+      background-color: var(--team-color);
+      border-radius: 4px;
+   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   
+    }
+   
+    &__icon-size {
+      width: 70px;
+      height: 70px;
+    }
+
+        // Переваги налаштування блока 480
+        @media screen and (min-width: 480px){
+          display: flex;
+          flex-direction: column;
+    
+          &__icon {
+            gap: 0;
+            margin: 0;
+            height: 120px;
+            width: 450px;
+            border-radius: 4px;
+        }
+
+  }
+
+          // Переваги налаштування блока 768
+          @media screen and (min-width: 768px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+      
+            &__icon {
+              gap: 0;
+              margin: 0;
+              height: 120px;
+              width: 354px;
+              border-radius: 4px;
+          }
+  
+    }
+              // Переваги налаштування блока 1200
+              @media screen and (min-width: 1200px){
+                display: grid;
+                grid-template-columns:repeat(5,1fr);
+          
+                &__icon {
+                  gap: 0;
+                  margin: 0;
+                  height: 120px;
+                  width: 270px;
+                  border-radius: 4px;
+              }
+      
+        }
+ 
+}

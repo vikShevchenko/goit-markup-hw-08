@@ -1,0 +1,84 @@
+.team {
+    background-color: var(--team-color);
+
+    &__photo {
+      padding: 0;
+      margin: 0;
+   
+      display: flex;
+      justify-content: space-between;
+
+
+        // Контейнер налаштування 480
+      @media screen  and (min-width: 480px){
+        flex-direction: column;
+        gap: 30px;
+
+      }
+
+      // Контейнер налаштування 768
+      @media screen and (min-width: 768px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        
+      }
+
+      // Контейнер налаштування 768
+      @media screen and (min-width: 1200px){
+        display: grid;
+        grid-template-columns: repeat(5,1fr); 
+        gap: 30px;
+              
+      }
+    }
+
+
+    &__photo img {
+      display: block;
+      width: 100%;
+    }
+   
+    &__title {
+      padding: 30px 5px;
+    }
+   
+    &__photo--name {
+      margin-bottom: 10px;
+   
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.2;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+   
+    &__photo--background {
+      background-color: var(--background-main);
+   
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+    }
+
+    @media screen and (min-width: 1200px){
+      &__photo--background{
+        width: 270px;
+      }
+    }
+   
+    &__proffesion {
+      margin-bottom: 16px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.2;
+      text-align: center;
+      letter-spacing: 0.03em;
+   
+      color: #757575;
+    }
+  }
+ 
+ 
+
+ 

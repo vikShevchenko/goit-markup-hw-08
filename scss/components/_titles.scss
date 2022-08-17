@@ -1,0 +1,162 @@
+.header-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+
+  letter-spacing: 0.03em;
+
+
+
+  &--position {
+    margin-bottom: 50px;
+    text-align: center;
+
+
+
+  }
+
+  @media screen  and (min-width: 480px) {
+    &--position {
+      margin-bottom: 30px;
+    } 
+  }
+
+  @media screen and (min-width: 1200px) {
+    &--position {
+      margin-bottom: 50px;
+    } 
+  }
+
+}
+
+
+
+
+.hero-text {
+    position: relative;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  
+    color: var(--background-main);
+    z-index: 1;
+
+    @media screen and (min-width: 480px){
+      font-size: 26px;
+      line-height: 1.6;
+    
+    }
+
+    
+
+
+  }
+
+  .modal-title{
+    box-sizing: border-box;
+      margin-left: auto; 
+      margin-right: auto; 
+      font-weight: 700;
+      
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--text-color);
+    
+    }
+    .advantages__title{
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+
+        //Відступи тексту "переваги" 480
+        @media screen and (min-width: 480px){
+          text-align: center;
+          margin-top: 30px;
+        }
+        //Відступи тексту "переваги" 768
+        @media screen and (min-width: 480px){
+          text-align:left;
+        }
+
+        //Відступи тексту "переваги" 1200
+        @media screen and (min-width: 1200px){
+          text-align: left;
+          margin-top: 30px;
+        
+        }
+
+      }
+      
+      .advantages__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+      
+        color: #757575;
+
+
+      }
+
+
+     
+      .portfolio__title {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 24px;
+        padding-right: 24px; 
+      
+        background: #ffffff;
+        border-left: 1px solid #eeeeee;
+        border-right: 1px solid #eeeeee;
+        border-bottom: 1px solid #eeeeee;
+      }
+
+      .footer-text {
+        padding-left: 0px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        color: var(--background-main);
+      }
+      @media screen  and (min-width: 480px){
+        .footer-text{
+          text-align: center;
+          margin-top: 60px;
+        } 
+      }  
+      @media screen and (min-width: 1200px){
+        .footer-text{
+          text-align: start;
+          margin-top: -26px;
+        }    
+    }
+
+
+    @media screen and (min-width: 768px){
+      .footer-text__tab{
+        margin-top: 5px;
+      }
+
+    }
+
+    @media screen and (min-width: 1200px){
+      .footer-text__tab{
+        margin-top: 12px;
+      }
+
+    }
+
+
+

@@ -1,0 +1,119 @@
+// Контейнер загальні налаштування
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+  position: relative;
+
+  // Контейнер налаштування 480
+  @media screen and (min-width: 480px){
+    width: 480px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  &__team{
+  @media screen and (min-width: 480px){
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+  }
+}
+
+  // Контейнер налаштування 768
+  @media screen and (min-width: 768px){
+    width: 768px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+  }
+
+  // Контейнер налаштування 1200
+  @media screen and (min-width: 1200px){
+    width: 1200px;
+    padding-bottom: 94px;
+    padding-top: 94px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+  @media screen and (min-width: 480px){
+    .container__partners{
+      padding: 60px 15px;
+
+    }
+}
+
+@media screen and (min-width: 1200px){
+  .container__partners{
+    padding: 94px 15px;
+
+  }
+}
+
+.container__portfolio{
+  @media screen and (min-width: 480px){
+    padding: 60px 15px;}
+
+}
+
+  //Відступи (внутрішні) у контейнера героя 480
+.hero__size{
+  @media screen and (min-width: 480px){
+    padding: 118px 60px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+      
+}
+// Контейнер налаштування переваги 480
+.advantages__size{
+  @media screen and (min-width: 480px){
+    padding: 60px 15px; //!?
+
+  }
+  @media screen and (min-width: 1200px){
+    padding: 94px 15px 0px; //!?
+
+  }
+
+}
+.advantages-block {
+  padding-top: 94px;
+
+  @media screen and (min-width: 480px){
+    padding-top: 0;
+  }
+  
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--background-hero);
+}
+@media screen and (min-width: 480px){
+  .footer{
+    padding: 0;
+}
+
+}
+section {
+  padding-top: 94px;
+  padding-bottom: 94px; 
+
+  @media screen and (min-width: 480px){
+    padding-bottom: 0; 
+    padding-top: 0;
+
+  }
+}
