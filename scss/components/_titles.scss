@@ -81,8 +81,8 @@
           text-align: center;
           margin-top: 30px;
         }
-        //Відступи тексту "переваги" 768
-        @media screen and (min-width: 480px){
+        //Відступи тексту "переваги" 480
+        @media screen and (min-width: 768px){
           text-align:left;
         }
 
@@ -113,12 +113,15 @@
         padding-bottom: 20px;
         padding-left: 24px;
         padding-right: 24px; 
+
+        outline: solid; //---------------------!!!!!!!!!!
       
         background: #ffffff;
         border-left: 1px solid #eeeeee;
         border-right: 1px solid #eeeeee;
         border-bottom: 1px solid #eeeeee;
       }
+      
 
       .footer-text {
         padding-left: 0px;
