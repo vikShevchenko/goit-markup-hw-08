@@ -15,12 +15,17 @@
     background-color: var(--background-main);
     opacity: 1;
     visibility: visible;
+    
 
+    @media screen  and (min-width: 320px){
+      width: 450px;
+      height: 609px;
+      margin-top: -85px;
+    }
     @media screen  and (min-width: 480px){
       width: 450px;
       height: 609px;
       margin-top: -85px;
-
     }
     @media screen and (min-width: 768px){
       margin-top: -10px;

@@ -2,19 +2,17 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-
   letter-spacing: 0.03em;
-
-
 
   &--position {
     margin-bottom: 50px;
     text-align: center;
-
-
-
   }
-
+  @media screen  and (min-width: 320px) {
+    &--position {
+      margin-bottom: 30px;
+    } 
+  }
   @media screen  and (min-width: 480px) {
     &--position {
       margin-bottom: 30px;
@@ -26,12 +24,7 @@
       margin-bottom: 50px;
     } 
   }
-
 }
-
-
-
-
 .hero-text {
     position: relative;
     font-weight: 900;
@@ -42,16 +35,15 @@
   
     color: var(--background-main);
     z-index: 1;
-
+    
+    @media screen and (min-width: 320px){
+      font-size: 26px;
+      line-height: 1.6; 
+    }
     @media screen and (min-width: 480px){
       font-size: 26px;
-      line-height: 1.6;
-    
+      line-height: 1.6;   
     }
-
-    
-
-
   }
 
   .modal-title{
@@ -74,14 +66,17 @@
         line-height: 1.1;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-
-
         //Відступи тексту "переваги" 480
+
+        @media screen and (min-width: 320px){
+          text-align: center;
+          margin-top: 30px;
+        }
         @media screen and (min-width: 480px){
           text-align: center;
           margin-top: 30px;
         }
-        //Відступи тексту "переваги" 480
+        //Відступи тексту "переваги" 768
         @media screen and (min-width: 768px){
           text-align:left;
         }
@@ -89,12 +84,9 @@
         //Відступи тексту "переваги" 1200
         @media screen and (min-width: 1200px){
           text-align: left;
-          margin-top: 30px;
-        
+          margin-top: 30px;  
         }
-
-      }
-      
+      } 
       .advantages__text {
         font-weight: 400;
         font-size: 14px;
@@ -102,24 +94,33 @@
         letter-spacing: 0.03em;
       
         color: #757575;
-
-
       }
-
-
-     
       .portfolio__title {
         padding-top: 20px;
         padding-bottom: 20px;
         padding-left: 24px;
         padding-right: 24px; 
 
-        outline: solid; //---------------------!!!!!!!!!!
+        // outline: solid; //---------------------!!!!!!!!!!
       
         background: #ffffff;
         border-left: 1px solid #eeeeee;
         border-right: 1px solid #eeeeee;
         border-bottom: 1px solid #eeeeee;
+
+        @media screen and (min-width: 320px) {
+          width: 290px; 
+        }
+        @media screen and (min-width: 480px) {
+          width: 450px; 
+        }
+        @media screen and (min-width: 768px) {
+          width: 354px; 
+        }
+        @media screen and (min-width: 1200px) {
+          width: 370px; 
+        }
+
       }
       
 
@@ -132,6 +133,13 @@
         text-transform: uppercase;
         color: #FFFFFF;
         color: var(--background-main);
+      }
+
+      @media screen  and (min-width: 320px){
+        .footer-text{
+          text-align: center;
+          margin-top: 60px;
+        } 
       }
       @media screen  and (min-width: 480px){
         .footer-text{

@@ -23,6 +23,19 @@
     }
 
         // Переваги налаштування блока 480
+
+        @media screen and (min-width: 320px){
+          display: flex;
+          flex-direction: column;
+    
+          &__icon {
+            gap: 0;
+            margin: 0;
+            height: 120px;
+            width: 290px;
+            border-radius: 4px;
+          }
+        }
         @media screen and (min-width: 480px){
           display: flex;
           flex-direction: column;
@@ -33,9 +46,8 @@
             height: 120px;
             width: 450px;
             border-radius: 4px;
+          }
         }
-
-  }
 
           // Переваги налаштування блока 768
           @media screen and (min-width: 768px){

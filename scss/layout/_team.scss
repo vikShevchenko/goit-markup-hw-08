@@ -10,6 +10,12 @@
 
 
         // Контейнер налаштування 480
+
+      @media screen  and (min-width: 320px){
+        flex-direction: column;
+        gap: 30px;
+  
+      }
       @media screen  and (min-width: 480px){
         flex-direction: column;
         gap: 30px;

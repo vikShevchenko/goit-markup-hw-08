@@ -28,7 +28,31 @@
    
       pointer-events: none;
     }
+    
 
+
+    @media screen  and (min-width: 320px){
+      padding-top: 0px;
+      padding-bottom: 0px;
+      max-width: 100%;   
+      background-size: cover; 
+
+      background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/header-smoll@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-hero);
+  @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+        background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/header-smoll@2x.jpg);
+      }
+    }
     @media screen  and (min-width: 480px){
       padding-top: 0px;
       padding-bottom: 0px;

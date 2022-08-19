@@ -3,7 +3,18 @@
  
     align-items: baseline;
   }
+  
 
+  @media screen  and (min-width: 320px) {
+    .align {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 15px;
+    
+  }
+}
   @media screen  and (min-width: 480px) {
     .align {
       display: flex;
@@ -14,13 +25,20 @@
     
   }
 }
+
+@media screen  and (min-width: 320px) {
+  .logo__pozition{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   } 
+}
 @media screen  and (min-width: 480px) {
   .logo__pozition{
     display: flex;
     justify-content: center;
     flex-direction: column;
-   }
-  
+   } 
 }
 @media screen and (min-width: 768px) {
   .align {
@@ -77,12 +95,19 @@
       color: var(--blue);
     }
   }
+
+  @media screen  and (min-width: 320px){
+    .adress__footer{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    } 
+  }
   @media screen  and (min-width: 480px){
     .adress__footer{
       display: flex;
       align-items: center;
       flex-direction: column;
-
     } 
   }
   @media screen and (min-width: 1200px){
@@ -128,6 +153,12 @@
    
     }
   }
+
+  @media screen  and (min-width: 320px){
+    .lincs-futer{
+      margin-left: 0px;
+    }
+    }
   @media screen  and (min-width: 480px){
     .lincs-futer{
       margin-left: 0px;
@@ -143,19 +174,30 @@
   .subsckribe {
     
     box-sizing: content-box;
+    
 
+    @media screen  and (min-width: 320px) {
+      .subscribe--position{
+        margin-left: 0px; 
+      }
+    }
     @media screen  and (min-width: 480px) {
       .subscribe--position{
-        margin-left: 0px;
-        
+        margin-left: 0px; 
       }
-  
     }
     &__form {
    
       display: flex;
       gap: 10px;
       margin-top: 20px;
+    }
+
+    @media screen  and (min-width: 320px) {
+      &__form {
+        gap: 0;
+        margin-top: 0px;
+      }
     }
     @media screen  and (min-width: 480px) {
       &__form {
@@ -186,13 +228,20 @@
    
  
   }
+  
 
+  @media screen  and (min-width: 320px) {
+    .subsckribe__input{
+      width: 290px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
   @media screen  and (min-width: 480px) {
     .subsckribe__input{
       width: 450px;
       margin-top: 20px;
       margin-bottom: 20px;
-
     }
   }
 
@@ -213,6 +262,12 @@
 
 
   // Центрування і позиціонування кнопки та поля вводу 480
+
+  @media screen  and (min-width: 320px) {
+    .subsckribe__form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   @media screen  and (min-width: 480px) {
     .subsckribe__form {
     flex-wrap: wrap;
@@ -239,5 +294,5 @@
     
   }
 }
-
+}
   
