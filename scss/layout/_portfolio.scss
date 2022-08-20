@@ -44,8 +44,20 @@
       transition-property: top;
       transition-duration: var(--time);
       transition-timing-function: var(--cub);
+
+      @media screen and (min-width: 320px){
+        padding: 20px 24px;
+        font-size: 14px;
    
+      }
+      @media screen and (min-width: 480px){
+        padding: 63px 24px;
+        font-size: 18px;
+ 
+      }
     }
+
+
     &__project {
       margin-bottom: 4px;
    
