@@ -373,7 +373,7 @@ section {
 }
 @media screen and (min-width: 320px) {
   .modal {
-    top: 150px;
+    top: 115px;
     width: 300px;
     height: 609px;
     margin-top: -85px;
@@ -439,6 +439,16 @@ section {
 .modal-form {
   display: block;
   padding-top: 14px;
+}
+@media screen and (min-width: 320px) {
+  .modal-form {
+    padding-top: 0px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal-form {
+    padding-top: 14px;
+  }
 }
 
 .modal-lable {
@@ -554,6 +564,18 @@ textarea:focus {
   -webkit-transition-timing-function: var(--cub);
           transition-timing-function: var(--cub);
 }
+@media screen and (min-width: 320px) {
+  .textarea {
+    height: 80px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .textarea {
+    height: 120px;
+    margin-bottom: 20px;
+  }
+}
 
 .modal-deal-box {
   display: -webkit-box;
@@ -563,7 +585,16 @@ textarea:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+}
+@media screen and (min-width: 320px) {
+  .modal-deal-box {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal-deal-box {
+    margin-bottom: 30px;
+  }
 }
 
 .modal-check {
@@ -744,7 +775,11 @@ textarea:focus {
 @media screen and (min-width: 480px) {
   .hero-text {
     font-size: 26px;
-    line-height: 1.6;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    font-size: 44px;
   }
 }
 
